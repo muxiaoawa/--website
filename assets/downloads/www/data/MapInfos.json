@@ -1,0 +1,8 @@
+[
+null,
+{"id":1,"expanded":true,"name":"房间","order":1,"parentId":0,"scrollX":455.1111111111111,"scrollY":392.8888888888889},
+{"id":2,"expanded":false,"name":"外面","order":2,"parentId":1,"scrollX":455.1111111111111,"scrollY":392.8888888888889},
+{"id":3,"expanded":false,"name":"外面【but】","order":3,"parentId":1,"scrollX":455.1111111111111,"scrollY":392.8888888888889},
+{"id":4,"expanded":false,"name":"秘密会面","order":4,"parentId":1,"scrollX":455.1111111111111,"scrollY":392.8888888888889},
+{"id":5,"expanded":false,"name":"不要啊","order":5,"parentId":1,"scrollX":455.1111111111111,"scrollY":392.8888888888889}
+]
