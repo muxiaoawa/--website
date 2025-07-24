@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>翼星少女 - 官方站点</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav>
+    <div class="container">
+      <a href="#" class="logo">翼星少女</a>
+      <ul class="nav-links">
+        <li><a href="#features">游戏特色</a></li>
+        <li><a href="#gallery">游戏画面</a></li>
+        <li><a href="#download">立即下载</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 英雄宣传区 -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>在末日废土中争夺<span class="highlight">最后生机</span></h1>
+      <p>开放世界生存冒险 | 暂未于2025年度最佳独立游戏提名</p>
+      <a href="#download" class="cta-button">免费试玩版下载</a>
+    </div>
+    <div class="hero-bg"></div> <!-- 动态背景容器 -->
+  </section>
+
+  <!-- 游戏特色 -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2>核心游戏体验</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <i class="fas fa-skull"></i>
+          <h3>魔法末日世界</h3>
+          <p>多位神秘角色 + 复杂交涉，体验真实的生存挑战</p>
+        </div>
+        <!-- 更多特色卡片... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 游戏截图轮播 -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>游戏实机画面</h2>
+      <div class="slider">
+        <img src="assets/images/screenshot1.jpg" alt="游戏截图1">
+        <img src="assets/images/screenshot2.jpg" alt="游戏截图2">
+        <!-- 更多截图... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 下载区域 -->
+  <section id="download" class="download">
+    <div class="container">
+      <h2>立即开启冒险</h2>
+      <div class="platforms">
+        <div class="platform-card">
+          <i class="fab fa-windows fa-3x"></i>
+          <h3>Windows PC</h3>
+          <p>版本 1.2.3 | 大小 243MB</p>
+          <a href="assets/downloads/game-win.zip" class="download-btn">下载安装包</a>
+        </div>
+        <!-- 更多平台... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer>
+    <p>© 2023 翼星少女开发团队 | 客服邮箱: 471676593@qq.com</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+    // 简单轮播效果
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slider img');
+    
+    function showSlide() {
+      slides.forEach(slide => slide.style.display = 'none');
+      slides[currentSlide].style.display = 'block';
+      currentSlide = (currentSlide + 1) % slides.length;
+    }
+    setInterval(showSlide, 3000);
+  </script>
+</body>
+</html>
